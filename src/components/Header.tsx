@@ -31,14 +31,9 @@ const Header = () => {
     label: "Ortodontia"
   }];
   return <>
-      {/* Linha fixa no topo mais baixa */}
-      <div className="bg-primary/15 backdrop-blur-md border-b border-primary/30 fixed top-0 left-0 right-0 z-50">
-        <div className="header-gradient h-0.5"></div>
-      </div>
-      
-      <header className="header-sticky top-0.5 bg-background/95 backdrop-blur-md shadow-[var(--shadow-header)] border-b border-border/50">
+      <header className="header-sticky top-0 hero-gradient border-b border-primary/20">
         <div className="container-main">
-          <div className="flex items-center justify-between py-px my-0 mx-[6px] bg-slate-300">
+          <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center">
               <img src="/lovable-uploads/187bc179-99dc-4077-8a65-e044f4cf07e3.png" alt="Clínica Odontoriso" className="h-12 w-auto drop-shadow-lg" />
@@ -46,20 +41,20 @@ const Header = () => {
 
             {/* Menu Desktop */}
             <nav className="hidden md:flex items-center space-x-8">
-              {navLinks.map(link => <a key={link.href} href={link.href} className="text-foreground hover:text-secondary transition-colors duration-300 font-medium">
+              {navLinks.map(link => <a key={link.href} href={link.href} className="text-white hover:text-white/80 transition-colors duration-300 font-medium">
                   {link.label}
                 </a>)}
             </nav>
 
             {/* Menu Mobile Toggle */}
-            <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <Button variant="ghost" size="icon" className="md:hidden text-white hover:text-white/80" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
           </div>
 
           {/* Menu Mobile */}
-          {isMenuOpen && <nav className="md:hidden pb-4 border-t border-border mt-4 pt-4">
-              {navLinks.map(link => <a key={link.href} href={link.href} className="block py-2 text-foreground hover:text-secondary transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
+          {isMenuOpen && <nav className="md:hidden pb-4 border-t border-white/20 mt-4 pt-4">
+              {navLinks.map(link => <a key={link.href} href={link.href} className="block py-2 text-white hover:text-white/80 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
                   {link.label}
                 </a>)}
             </nav>}
