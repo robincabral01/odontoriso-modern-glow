@@ -31,7 +31,7 @@ const Header = () => {
         <div className="header-gradient h-1"></div>
       </div>
       
-      <header className={`header-sticky top-1 ${isScrolled ? "bg-background/90 backdrop-blur-md shadow-[var(--shadow-header)]" : "bg-primary/5 backdrop-blur-sm"}`}>
+      <header className="header-sticky top-1 bg-primary/5 backdrop-blur-md shadow-[var(--shadow-header)]">
         <div className="container-main">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
@@ -39,7 +39,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/187bc179-99dc-4077-8a65-e044f4cf07e3.png" 
                 alt="Clínica Odontoriso"
-                className="h-16 w-auto drop-shadow-lg"
+                className="h-12 w-auto drop-shadow-lg"
               />
             </div>
 
