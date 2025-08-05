@@ -26,6 +26,11 @@ const ProteseSobreImplante = () => {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
+              <img 
+                src="/lovable-uploads/466a7d91-5f05-4c89-8751-9312287d4832.png" 
+                alt="Prótese sobre Implante - Resultado" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 Benefícios da Prótese sobre Implante
               </h2>
