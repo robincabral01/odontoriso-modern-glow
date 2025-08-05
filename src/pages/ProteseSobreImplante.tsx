@@ -18,7 +18,7 @@ const ProteseSobreImplante = () => {
             <div>
               <div className="mb-6">
                 <img 
-                  src="/lovable-uploads/1a4d9818-a769-456d-ad63-7e9c0a8576d0.png" 
+                  src="/lovable-uploads/0bdcb474-4141-42b6-979b-bba5c6f39754.png" 
                   alt="Prótese sobre implante" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
