@@ -1,4 +1,4 @@
-import { Smile, Sparkles, Wrench, Shield, AlignLeft } from 'lucide-react';
+import { Smile, Sparkles, Plus, Shield, AlignLeft } from 'lucide-react';
 import ToothIcon from './icons/ToothIcon';
 
 const ServicesGrid = () => {
@@ -19,7 +19,7 @@ const ServicesGrid = () => {
       title: "Implantes Dentários",
       description: "Recupere a função e estética dos seus dentes",
       href: "/implantes-dentarios",
-      icon: Wrench
+      icon: Plus
     },
     {
       title: "Prótese sobre Implante",
