@@ -11,6 +11,8 @@ const WhatsAppFloat = () => {
         src="/whatsapp-icon.png" 
         alt="WhatsApp"
         className="w-12 h-12"
+        loading="eager"
+        decoding="sync"
       />
     </a>
   );
