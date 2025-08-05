@@ -1,4 +1,4 @@
-import { Smile, Sparkles, Activity, Settings, Grid3X3 } from 'lucide-react';
+import ToothIcon from './icons/ToothIcon';
 
 const ServicesGrid = () => {
   const services = [
@@ -6,31 +6,31 @@ const ServicesGrid = () => {
       title: "Prótese Dentária Flexível",
       description: "Conforto e naturalidade para o seu sorriso",
       href: "/protese-flexivel",
-      icon: Smile
+      icon: ToothIcon
     },
     {
       title: "Facetas Dentárias",
       description: "Transforme seu sorriso com naturalidade",
       href: "/facetas-dentarias",
-      icon: Sparkles
+      icon: ToothIcon
     },
     {
       title: "Implantes Dentários",
       description: "Recupere a função e estética dos seus dentes",
       href: "/implantes-dentarios",
-      icon: Activity
+      icon: ToothIcon
     },
     {
       title: "Prótese sobre Implante",
       description: "Solução definitiva e segura",
       href: "/protese-sobre-implante",
-      icon: Settings
+      icon: ToothIcon
     },
     {
       title: "Ortodontia",
       description: "Alinhamento perfeito para o seu sorriso",
       href: "/ortodontia",
-      icon: Grid3X3
+      icon: ToothIcon
     }
   ];
 
