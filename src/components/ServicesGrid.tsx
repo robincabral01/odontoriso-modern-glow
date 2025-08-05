@@ -1,34 +1,36 @@
+import { Smile, Sparkles, Activity, Settings, Grid3X3 } from 'lucide-react';
+
 const ServicesGrid = () => {
   const services = [
     {
       title: "Prótese Dentária Flexível",
       description: "Conforto e naturalidade para o seu sorriso",
       href: "/protese-flexivel",
-      icon: "🦷"
+      icon: Smile
     },
     {
       title: "Facetas Dentárias",
       description: "Transforme seu sorriso com naturalidade",
       href: "/facetas-dentarias",
-      icon: "✨"
+      icon: Sparkles
     },
     {
       title: "Implantes Dentários",
       description: "Recupere a função e estética dos seus dentes",
       href: "/implantes-dentarios",
-      icon: "🦷"
+      icon: Activity
     },
     {
       title: "Prótese sobre Implante",
       description: "Solução definitiva e segura",
       href: "/protese-sobre-implante",
-      icon: "🔧"
+      icon: Settings
     },
     {
       title: "Ortodontia",
       description: "Alinhamento perfeito para o seu sorriso",
       href: "/ortodontia",
-      icon: "📐"
+      icon: Grid3X3
     }
   ];
 
@@ -53,7 +55,7 @@ const ServicesGrid = () => {
               className="service-card p-6 text-center group cursor-pointer"
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
+                <service.icon size={48} className="mx-auto text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">
                 {service.title}
