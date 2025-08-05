@@ -26,12 +26,12 @@ const Header = () => {
 
   return (
     <>
-      {/* Linha fixa no topo para destaque da logo */}
-      <div className="bg-primary/10 backdrop-blur-sm border-b border-primary/20 fixed top-0 left-0 right-0 z-50">
-        <div className="header-gradient h-1"></div>
+      {/* Linha fixa no topo mais baixa */}
+      <div className="bg-primary/15 backdrop-blur-md border-b border-primary/30 fixed top-0 left-0 right-0 z-50">
+        <div className="header-gradient h-0.5"></div>
       </div>
       
-      <header className="header-sticky top-1 bg-primary/5 backdrop-blur-md shadow-[var(--shadow-header)]">
+      <header className="header-sticky top-0.5 bg-background/95 backdrop-blur-md shadow-[var(--shadow-header)] border-b border-border/50">
         <div className="container-main">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
