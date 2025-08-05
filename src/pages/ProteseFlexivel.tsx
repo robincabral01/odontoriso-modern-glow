@@ -45,7 +45,7 @@ const ProteseFlexivel = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
               <img 
-                src="/lovable-uploads/f21f94bf-a13a-40cf-8f9c-a00afb72c7e4.png" 
+                src="/lovable-uploads/adda76f3-cb1c-4f78-b565-96713235985f.png" 
                 alt="Prótese Dentária Flexível" 
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
