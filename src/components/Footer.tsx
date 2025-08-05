@@ -14,7 +14,7 @@ const Footer = () => {
           
           {/* Créditos ALCA Mídias */}
           <div className="text-xs text-primary-foreground/60 pt-4 border-t border-primary-foreground/20">
-            <a href="https://www.somosalca.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground/80 transition-colors">DesALCA Mídias</a>
+            <a href="https://www.somosalca.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground/80 transition-colors">Desenvolvido por uma agência especializada em resultados para clínicas</a>
           </div>
         </div>
       </div>
