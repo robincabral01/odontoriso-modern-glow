@@ -44,6 +44,11 @@ const ProteseFlexivel = () => {
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+              <img 
+                src="/lovable-uploads/f21f94bf-a13a-40cf-8f9c-a00afb72c7e4.png" 
+                alt="Prótese Dentária Flexível" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
               <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
                 Benefícios da Prótese Flexível
               </h2>
