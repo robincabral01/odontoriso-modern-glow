@@ -12,12 +12,7 @@ const Ortodontia = () => {
       <Hero title="Ortodontia" subtitle="Alinhamento perfeito para o seu sorriso com tratamentos modernos e eficazes" />
       
       {/* Seção Benefícios com Background */}
-      <section className="section-padding relative overflow-hidden" style={{
-      backgroundImage: `url('/lovable-uploads/d95a5671-bff8-4c5f-acd4-2f5f91934dd8.png')`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
-    }}>
+      <section className="section-padding relative overflow-hidden">
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-primary/30 to-primary/20"></div>
         
