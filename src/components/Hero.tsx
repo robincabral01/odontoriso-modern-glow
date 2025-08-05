@@ -8,15 +8,7 @@ interface HeroProps {
 
 const Hero = ({ title, subtitle, showCTA = true }: HeroProps) => {
   return (
-    <section 
-      className="relative min-h-[50vh] flex items-center justify-center"
-      style={{
-        backgroundImage: `url('/lovable-uploads/8101ac54-68fc-4fb9-a796-bd14e487c769.png')`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section className="hero-gradient relative min-h-[50vh] flex items-center justify-center">
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/20"></div>
       

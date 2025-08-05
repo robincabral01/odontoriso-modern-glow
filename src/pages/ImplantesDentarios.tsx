@@ -23,7 +23,7 @@ const ImplantesDentarios = () => {
       
       {/* Seção Benefícios */}
       <section className="section-padding relative overflow-hidden" style={{
-          backgroundImage: `url('/lovable-uploads/8101ac54-68fc-4fb9-a796-bd14e487c769.png')`,
+          backgroundImage: `url('/lovable-uploads/40fcd238-3e63-49cd-b882-97c1be4ecfde.png')`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
