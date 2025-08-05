@@ -25,37 +25,24 @@ const Ortodontia = () => {
       <section 
         className="section-padding relative overflow-hidden"
         style={{
-          backgroundImage: `url('/lovable-uploads/af43778b-a3b8-4164-a2a0-349509e50017.png')`,
-          backgroundPosition: 'right center',
+          backgroundImage: `url('/lovable-uploads/d95a5671-bff8-4c5f-acd4-2f5f91934dd8.png')`,
+          backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Overlay sutil apenas na esquerda */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/20 to-transparent"></div>
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/60"></div>
         
         {/* Badge de Resultados Reais */}
         <div className="absolute top-8 right-8 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
           <span className="text-white font-medium text-sm">✨ Resultados Reais</span>
         </div>
         
-        {/* Call-to-action sobreposta à imagem */}
-        <div className="absolute bottom-8 right-8 bg-primary/90 backdrop-blur-sm p-6 rounded-xl border border-white/20 max-w-sm">
-          <h3 className="text-xl font-bold text-white mb-2">
-            Transforme seu Sorriso
-          </h3>
-          <p className="text-white/90 text-sm mb-4">
-            Agende sua consulta e descubra como a ortodontia pode mudar sua vida.
-          </p>
-          <button className="bg-white text-primary px-4 py-2 rounded-lg font-semibold hover:bg-white/90 transition-all">
-            Agendar Consulta
-          </button>
-        </div>
-        
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Benefícios com fundo semi-transparente - ocupando mais espaço */}
-            <div className="bg-primary/80 backdrop-blur-sm p-8 rounded-xl border border-white/20 lg:max-w-lg">
+            {/* Benefícios com fundo semi-transparente */}
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Benefícios da Ortodontia
               </h2>
@@ -67,20 +54,20 @@ const Ortodontia = () => {
                   </li>
                 ))}
               </ul>
-              
-              {/* Informação adicional sobre o tratamento */}
-              <div className="mt-8 pt-6 border-t border-white/20">
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Tecnologia Moderna
-                </h3>
-                <p className="text-white/90 text-sm">
-                  Utilizamos aparelhos de última geração para resultados mais rápidos e confortáveis.
-                </p>
-              </div>
             </div>
             
-            {/* Espaço livre para destacar a imagem */}
-            <div className="hidden lg:block"></div>
+            {/* Como Funciona com fundo semi-transparente */}
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Como Funciona
+              </h3>
+              <p className="text-white/90 leading-relaxed">
+                O tratamento ortodôntico utiliza aparelhos fixos ou móveis para corrigir 
+                o posicionamento dos dentes e melhorar a oclusão. Com tecnologia moderna 
+                e materiais de alta qualidade, conseguimos resultados eficazes em menos 
+                tempo, proporcionando o sorriso perfeito que você sempre desejou.
+              </p>
+            </div>
           </div>
         </div>
       </section>
