@@ -22,27 +22,43 @@ const ImplantesDentarios = () => {
       />
       
       {/* Seção Benefícios */}
-      <section className="section-padding">
-        <div className="container-main">
+      <section className="section-padding relative overflow-hidden" style={{
+          backgroundImage: `url('/lovable-uploads/a6ce1c78-1a67-4693-881e-0f457d4d6e69.png')`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}>
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-primary/30 to-primary/20"></div>
+        
+        {/* Badge de Resultados Reais */}
+        <div className="absolute top-8 right-8 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
+          <span className="text-white font-medium text-sm">✨ Resultados Reais</span>
+        </div>
+        
+        <div className="container-main relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+            {/* Benefícios com fundo semi-transparente */}
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-950">
                 Benefícios dos Implantes
               </h2>
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
-                    <span className="text-secondary text-xl">✓</span>
-                    <span className="text-lg text-muted-foreground">{benefit}</span>
+                    <span className="text-blue-950 text-xl">✓</span>
+                    <span className="text-lg text-slate-900">{benefit}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="service-card p-8">
-              <h3 className="text-2xl font-bold text-primary mb-4">
+            
+            {/* Como Funciona com fundo semi-transparente */}
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+              <h3 className="text-2xl font-bold text-blue-950 mb-4">
                 Como Funciona
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-slate-900 leading-relaxed">
                 O implante dentário é um pino de titânio inserido no osso da mandíbula ou maxila, 
                 que substitui a raiz do dente perdido. Após a osseointegração, uma coroa 
                 protética é fixada sobre o implante, devolvendo completamente a função e 
