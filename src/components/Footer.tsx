@@ -1,6 +1,5 @@
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground py-8">
+  return <footer className="bg-primary text-primary-foreground py-8">
       <div className="container-main">
         <div className="text-center">
           <p className="mb-4">
@@ -8,31 +7,17 @@ const Footer = () => {
           </p>
           
           <div className="flex justify-center space-x-4 mb-6">
-            <a
-              href="https://share.google/jatjVek3Tfqv7tE4L"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-secondary hover:text-accent transition-colors"
-            >
+            <a href="https://share.google/jatjVek3Tfqv7tE4L" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-colors">
               Avalie-nos no Google
             </a>
           </div>
           
           {/* Créditos ALCA Mídias */}
           <div className="text-xs text-primary-foreground/60 pt-4 border-t border-primary-foreground/20">
-            <a
-              href="https://www.somosalca.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary-foreground/80 transition-colors"
-            >
-              ALCA Mídias
-            </a>
+            <a href="https://www.somosalca.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground/80 transition-colors">DesALCA Mídias</a>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
