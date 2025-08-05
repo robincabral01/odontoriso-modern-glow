@@ -16,7 +16,7 @@ const ServicesGrid = () => {
       title: "Implantes Dentários",
       description: "Recupere a função e estética dos seus dentes",
       href: "/implantes-dentarios",
-      icon: "⚕️"
+      icon: "🦷"
     },
     {
       title: "Prótese sobre Implante",
