@@ -1,3 +1,4 @@
+import { Smile, Sparkles, Wrench, Shield, AlignLeft } from 'lucide-react';
 import ToothIcon from './icons/ToothIcon';
 
 const ServicesGrid = () => {
@@ -12,25 +13,25 @@ const ServicesGrid = () => {
       title: "Facetas Dentárias",
       description: "Transforme seu sorriso com naturalidade",
       href: "/facetas-dentarias",
-      icon: ToothIcon
+      icon: Sparkles
     },
     {
       title: "Implantes Dentários",
       description: "Recupere a função e estética dos seus dentes",
       href: "/implantes-dentarios",
-      icon: ToothIcon
+      icon: Wrench
     },
     {
       title: "Prótese sobre Implante",
       description: "Solução definitiva e segura",
       href: "/protese-sobre-implante",
-      icon: ToothIcon
+      icon: Shield
     },
     {
       title: "Ortodontia",
       description: "Alinhamento perfeito para o seu sorriso",
       href: "/ortodontia",
-      icon: ToothIcon
+      icon: AlignLeft
     }
   ];
 
