@@ -40,6 +40,13 @@ const ImplantesDentarios = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Benefícios com fundo semi-transparente */}
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/9d525e40-6366-439a-aede-bd4948b6ba6d.png" 
+                  alt="Implante dentário"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-950">
                 Benefícios dos Implantes
               </h2>
