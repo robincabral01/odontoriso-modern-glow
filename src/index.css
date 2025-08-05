@@ -2,41 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Clínica Odontoriso Design System */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 22%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 22%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 22%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cores principais da clínica */
+    --clinic-gray: 0 0% 22%; /* #383838 */
+    --clinic-green: 75 100% 55%; /* #b7e600 */
+    
+    --primary: 0 0% 22%; /* Cinza principal */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 75 100% 55%; /* Verde principal */
+    --secondary-foreground: 0 0% 22%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 75 100% 55%;
+    --accent-foreground: 0 0% 22%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 75 100% 55%;
 
     --radius: 0.5rem;
+
+    /* Gradientes personalizados */
+    --gradient-header: linear-gradient(90deg, hsl(var(--clinic-gray)), hsl(var(--clinic-green)));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 12%) 0%, hsl(var(--clinic-green)) 100%);
+    
+    /* Sombras elegantes */
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-header: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    
+    /* Transições suaves */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +113,71 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Gradiente do header */
+  .header-gradient {
+    background: var(--gradient-header);
+  }
+  
+  /* Gradiente do hero */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  /* Cards com hover effect */
+  .service-card {
+    @apply bg-card rounded-lg border border-border shadow-[var(--shadow-card)] 
+           transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  /* Botão CTA principal */
+  .cta-button {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold
+           transition-all duration-300 hover:bg-accent hover:scale-105 shadow-lg;
+  }
+  
+  /* Header sticky */
+  .header-sticky {
+    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+  }
+  
+  /* Container principal */
+  .container-main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* WhatsApp piscando */
+  .whatsapp-pulse {
+    animation: pulse-green 2s infinite;
+  }
+  
+  @keyframes pulse-green {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Seção com espaçamento padrão */
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+  
+  /* Grid responsivo de serviços */
+  .services-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6;
+  }
+  
+  /* Grid de depoimentos */
+  .testimonials-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
   }
 }
