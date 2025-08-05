@@ -32,7 +32,7 @@ const Ortodontia = () => {
         }}
       >
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-primary/30 to-primary/20"></div>
         
         {/* Badge de Resultados Reais */}
         <div className="absolute top-8 right-8 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
