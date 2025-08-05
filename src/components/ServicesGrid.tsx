@@ -1,4 +1,4 @@
-import { Smile, Sparkles, Activity, Settings, Grid3X3 } from 'lucide-react';
+import { Smile, Sparkles, Activity, CircleDot, Grid3X3 } from 'lucide-react';
 
 const ServicesGrid = () => {
   const services = [
@@ -24,7 +24,7 @@ const ServicesGrid = () => {
       title: "Prótese sobre Implante",
       description: "Solução definitiva e segura",
       href: "/protese-sobre-implante",
-      icon: Settings
+      icon: CircleDot
     },
     {
       title: "Ortodontia",
