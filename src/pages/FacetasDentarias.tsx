@@ -26,6 +26,13 @@ const FacetasDentarias = () => {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/6c2ba63e-50f4-4b20-8be6-669c5c27fa08.png" 
+                  alt="Facetas dentárias" 
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 Benefícios das Facetas
               </h2>
