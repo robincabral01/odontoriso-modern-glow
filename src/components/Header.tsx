@@ -37,7 +37,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/logo-clinica.png" 
+                src="/lovable-uploads/c5d82fbe-6fe9-40c7-a903-4a948944020d.png" 
                 alt="Clínica Odontoriso"
                 className="h-16 w-auto drop-shadow-lg"
               />
