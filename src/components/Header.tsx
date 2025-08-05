@@ -38,7 +38,7 @@ const Header = () => {
       
       <header className="header-sticky top-0.5 bg-background/95 backdrop-blur-md shadow-[var(--shadow-header)] border-b border-border/50">
         <div className="container-main">
-          <div className="flex items-center justify-between py-px my-0 mx-[6px] bg-gray-600">
+          <div className="flex items-center justify-between py-px my-0 mx-[6px] bg-slate-300">
             {/* Logo */}
             <div className="flex items-center">
               <img src="/lovable-uploads/187bc179-99dc-4077-8a65-e044f4cf07e3.png" alt="Clínica Odontoriso" className="h-12 w-auto drop-shadow-lg" />
