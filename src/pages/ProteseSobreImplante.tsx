@@ -5,42 +5,25 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-
 const ProteseSobreImplante = () => {
-  const benefits = [
-    "Máxima estabilidade e segurança",
-    "Conforto superior às próteses convencionais",
-    "Melhora significativa na qualidade de vida"
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const benefits = ["Máxima estabilidade e segurança", "Conforto superior às próteses convencionais", "Melhora significativa na qualidade de vida"];
+  return <div className="min-h-screen">
       <Header />
-      <Hero 
-        title="Prótese sobre Implante"
-        subtitle="Solução definitiva e segura para recuperar completamente sua mastigação e confiança"
-      />
+      <Hero title="Prótese sobre Implante" subtitle="Solução definitiva e segura para recuperar completamente sua mastigação e confiança" />
       
       {/* Seção Benefícios */}
       <section className="section-padding">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
-                src="/lovable-uploads/466a7d91-5f05-4c89-8751-9312287d4832.png" 
-                alt="Prótese sobre Implante - Resultado" 
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 object-contain">
                 Benefícios da Prótese sobre Implante
               </h2>
               <ul className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start space-x-3">
+                {benefits.map((benefit, index) => <li key={index} className="flex items-start space-x-3">
                     <span className="text-secondary text-xl">✓</span>
                     <span className="text-lg text-muted-foreground">{benefit}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
             <div className="service-card p-8">
@@ -63,8 +46,6 @@ const ProteseSobreImplante = () => {
       <Contact />
       <Footer />
       <WhatsAppFloat />
-    </div>
-  );
+    </div>;
 };
-
 export default ProteseSobreImplante;
