@@ -1,6 +1,6 @@
 const About = () => {
-  return <section className="section-padding relative overflow-hidden" style={{
-      backgroundImage: `url('/lovable-uploads/woman-smile-bg.jpg')`,
+   return <section className="section-padding relative overflow-hidden" style={{
+      backgroundImage: `url('/src/assets/modern-dental-clinic.jpg')`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat'
