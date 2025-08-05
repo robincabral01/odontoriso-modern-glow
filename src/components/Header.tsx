@@ -26,18 +26,20 @@ const Header = () => {
 
   return (
     <>
-      {/* Linha de gradiente no topo */}
-      <div className="header-gradient h-1"></div>
+      {/* Linha fixa no topo para destaque da logo */}
+      <div className="bg-primary/10 backdrop-blur-sm border-b border-primary/20 fixed top-0 left-0 right-0 z-50">
+        <div className="header-gradient h-1"></div>
+      </div>
       
-      <header className={`header-sticky ${isScrolled ? "bg-background shadow-[var(--shadow-header)]" : "bg-transparent"}`}>
+      <header className={`header-sticky top-1 ${isScrolled ? "bg-background/90 backdrop-blur-md shadow-[var(--shadow-header)]" : "bg-primary/5 backdrop-blur-sm"}`}>
         <div className="container-main">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/logo.png" 
+                src="/logo-clinica.png" 
                 alt="Clínica Odontoriso"
-                className="h-12 w-auto"
+                className="h-16 w-auto drop-shadow-lg"
               />
             </div>
 
