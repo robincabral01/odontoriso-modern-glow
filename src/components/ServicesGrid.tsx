@@ -1,4 +1,4 @@
-import { Smile, Sparkles, Plus, Shield, AlignLeft } from 'lucide-react';
+import { Heart, Sparkles, UserPlus, Shield, ArrowUpDown } from 'lucide-react';
 import ToothIcon from './icons/ToothIcon';
 
 const ServicesGrid = () => {
@@ -19,7 +19,7 @@ const ServicesGrid = () => {
       title: "Implantes Dentários",
       description: "Recupere a função e estética dos seus dentes",
       href: "/implantes-dentarios",
-      icon: Plus
+      icon: UserPlus
     },
     {
       title: "Prótese sobre Implante",
@@ -31,7 +31,7 @@ const ServicesGrid = () => {
       title: "Ortodontia",
       description: "Alinhamento perfeito para o seu sorriso",
       href: "/ortodontia",
-      icon: AlignLeft
+      icon: ArrowUpDown
     }
   ];
 
@@ -55,8 +55,8 @@ const ServicesGrid = () => {
               href={service.href}
               className="service-card p-6 text-center group cursor-pointer"
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                <service.icon size={48} className="mx-auto text-primary" />
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
+                <service.icon size={48} className="text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">
                 {service.title}
