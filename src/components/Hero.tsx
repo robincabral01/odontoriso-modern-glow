@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero = ({ title, subtitle, showCTA = true }: HeroProps) => {
   return (
-    <section className="hero-gradient relative min-h-[50vh] flex items-center justify-center">
+    <section className="hero-gradient relative min-h-[60vh] md:min-h-screen flex items-center justify-center">
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/20"></div>
       
